@@ -35,16 +35,6 @@
 			path = Pokedex;
 			sourceTree = "<group>";
 		};
-		1F089EA92F5639150058DBEA /* PokedexTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PokedexTests;
-			sourceTree = "<group>";
-		};
-		1F089EB32F5639150058DBEA /* PokedexUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PokedexUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				1F089E972F5639140058DBEA /* Pokedex */,
-				1F089EA92F5639150058DBEA /* PokedexTests */,
-				1F089EB32F5639150058DBEA /* PokedexUITests */,
 				1F089E962F5639140058DBEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				1F089EA82F5639150058DBEA /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1F089EA92F5639150058DBEA /* PokedexTests */,
-			);
 			name = PokedexTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				1F089EB22F5639150058DBEA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1F089EB32F5639150058DBEA /* PokedexUITests */,
 			);
 			name = PokedexUITests;
 			packageProductDependencies = (
@@ -414,10 +396,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "NO-organizations-organizer.Pokedex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -453,10 +436,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "NO-organizations-organizer.Pokedex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
